@@ -1,0 +1,205 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --primary-color: #181E4B;
+  --secondary-color: #DF6951;
+  --text-color: #5E6282;
+  --dark-color: #14183E;
+  --light-color: #F5F5F5;
+  --border-color: #E5E7EB;
+
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #E5E7EB;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-3: #000000;
+
+/* semantic color variables for this project */
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--border-color);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading-1: var(--dark-color);
+  --color-heading-2: var(--secondary-color);
+  --color-heading-3: var(--secondary-color-darker);
+  --color-text: var(--vt-c-text-dark-3);
+
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+html, body, #__layout, .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--primary-color);
+  background: var(--light-color);
+  transition: color 0.5s,
+  background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-content .title {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.section-content .content {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.section-img {
+  width: 90%;
+  max-width: 450px;
+  align-self: center;
+  border-radius: 1rem;
+}
+
+.sub-section {
+  margin: 2rem 0;
+}
+
+.sub-section-content {
+  margin: 1rem 0;
+}
+
+.sub-section-content .sub-title {
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.sub-section-content .sub-content {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-family: myfont, sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.sub-section-content .sub-content > ul {
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+.sub-section-content .sub-content > ul > li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.sub-section-content .sub-content > ul > li::marker {
+  content: "";
+}
+
+.sub-section-content .sub-content > ul > li::before {
+  content: "\2022";
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .section-content {
+    padding: 40px 3rem 20px 3rem;
+  }
+
+  .section-content .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sub-section-content {
+    padding-left: 15px;
+  }
+
+  .sub-content {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-content {
+    padding: 40px 4rem 20px 4rem;
+  }
+
+  .section-content .content {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+  .section-content {
+    padding: 40px 5rem 20px 5rem;
+  }
+}

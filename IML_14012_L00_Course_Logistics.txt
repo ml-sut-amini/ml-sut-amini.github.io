@@ -1,0 +1,633 @@
+Lecture 00: Logistics
+Introduction to Machine Learning
+
+Sajjad Amini
+Department of Electrical Engineering
+Sharif University of Technology
+
+Sajjad Amini
+
+IML-L01
+
+1 / 14
+
+My Introduction
+
+Personal Info
+General: Assistant Professor at Electronics Research Institute.
+Office: Second floor, Electronics Research Institute
+Email: s_amini@sharif.edu
+
+Sajjad Amini
+
+IML-L01
+
+2 / 14
+
+My Introduction
+
+Personal Info
+General: Assistant Professor at Electronics Research Institute.
+Office: Second floor, Electronics Research Institute
+Email: s_amini@sharif.edu
+
+Research Field
+Trustworthy Machine Learning
+Generative Modeling
+Speech and Audio Processing
+
+Sajjad Amini
+
+IML-L01
+
+2 / 14
+
+Head Assistants
+
+Figure: Borna Khodabandeh
+(borna710kh@gmail.com)
+
+Sajjad Amini
+
+IML-L01
+
+3 / 14
+
+Head Assistants
+
+Figure: Borna Khodabandeh
+(borna710kh@gmail.com)
+
+Sajjad Amini
+
+IML-L01
+
+Figure: Amir Abbas Afzali
+(amir8afzali@gmail.com)
+
+3 / 14
+
+Course Timeline
+
+Sajjad Amini
+
+Number
+
+Date
+
+Tpoics
+
+1
+
+1403-11-27
+
+L00 - Logistics
+
+2
+
+1403-11-29
+
+3
+
+1403-12-04
+
+L01 - Introduction
+
+4
+
+1403-12-06
+
+L02 - Univariate Probability
+
+Coursework
+
+Deadline
+
+L01 - Introduction
+
+5
+
+1403-12-11
+
+L02 - Univariate Probability
+
+6
+
+1403-12-13
+
+L03 - Multivariate Probability
+
+7
+
+1403-12-18
+
+L04 - Statistics
+
+8
+
+1403-12-20
+
+9
+
+1403-12-25
+
+L04 - Statistics
+
+10
+
+1403-12-27
+
+L05 - Linear Algebra
+
+HW1 Release (L00 to L03)
+
+L04 - Statistics
+
+11
+
+1404-01-16
+
+L06 - Optimization
+
+12
+
+1404-01-18
+
+L07 - Logistic Regression
+
+13
+
+1404-01-23
+
+L07 - Logistic Regression
+
+14
+
+1404-01-25
+
+L08 - Discriminant Analysis
+
+15
+
+1404-01-30
+
+L09 - Linear Regression
+
+16
+
+1404-02-01
+
+L09 - Linear Regression
+
+17
+
+1404-02-06
+
+L10 - MultiLayer Perceptron
+
+18
+
+1404-02-08
+
+L10 - MultiLayer Perceptron
+
+19
+
+1404-02-13
+
+L11 - Convolutional Neural Networks
+
+20
+
+1404-02-15
+
+L12 - Kernel Methods
+
+21
+
+1404-02-20
+
+L12 - Kernel Methods
+
+22
+
+1404-02-22
+
+L12 - Kernel Methods
+
+23
+
+1404-02-27
+
+L12 - Kernel Methods
+
+24
+
+1404-02-29
+
+25
+
+1404-03-03
+
+L13 - Decision Tree
+
+26
+
+1404-03-05
+
+L14 - Dimensionality Reduction
+
+27
+
+1404-03-10
+
+L14 - Dimensionality Reduction
+
+28
+
+1404-03-12
+
+L14 - Dimensionality Reduction
+
+29
+
+1404-03-17
+
+L15 - Reinforcement Learning
+
+30
+
+1404-03-19
+
+L15 - Reinforcement Learning
+
+HW1
+HW2 Release (L04 to L06)
+
+HW2
+HW3 Release (L07 to L09)
+
+HW4 Release (L10 to L11)
+HW3
+
+HW4
+HW5 Release (L12 to L13)
+
+L13 - Decision Tree
+
+IML-L01
+
+HW5
+HW6 Release (L14 to L15)
+
+4 / 14
+
+Syllabus Overview
+
+Objectives
+Foundational understanding of problem formulation in Machine Learning
+
+Sajjad Amini
+
+IML-L01
+
+5 / 14
+
+Syllabus Overview
+
+Objectives
+Foundational understanding of problem formulation in Machine Learning
+Working with different types of Supervised/Unsupervised/Reinforcement
+Learning scenarios
+Training and optimization procedures
+Real-world applications
+
+Sajjad Amini
+
+IML-L01
+
+5 / 14
+
+Syllabus Overview
+
+Objectives
+Foundational understanding of problem formulation in Machine Learning
+Working with different types of Supervised/Unsupervised/Reinforcement
+Learning scenarios
+Training and optimization procedures
+Real-world applications
+
+Prerequisites
+Probability and Statistics
+Don’t worry! We will have ∼ 11 sections to fully review main concepts especially
+in Probability and Statistics. The prerequisites are:
+
+Sajjad Amini
+
+IML-L01
+
+5 / 14
+
+Syllabus Overview
+
+Others
+Presentations are tailored toward the probabilistic formation of different
+approaches
+
+Sajjad Amini
+
+IML-L01
+
+6 / 14
+
+Syllabus Overview
+
+Others
+Presentations are tailored toward the probabilistic formation of different
+approaches
+Homework: Theory Part + [Programming Part (Toy Datasets)] +
+[Programming Part]
+
+Sajjad Amini
+
+IML-L01
+
+6 / 14
+
+Syllabus Overview
+
+Others
+Presentations are tailored toward the probabilistic formation of different
+approaches
+Homework: Theory Part + [Programming Part (Toy Datasets)] +
+[Programming Part]
+
+This course is NOT
+Probability and Statistics
+Numerical optimization
+Linear Algebra
+
+Sajjad Amini
+
+IML-L01
+
+6 / 14
+
+Grade Distribution
+
+Activity Percentage
+
+Sajjad Amini
+
+Project
+
+20
+
+Homework
+
+30
+
+Midterm
+
+20
+
+Final
+
+30
+
+IML-L01
+
+7 / 14
+
+Course Policies
+
+Extra Credit
+Extra credit will be assigned to active class participation (up to 5%).
+
+Sajjad Amini
+
+IML-L01
+
+8 / 14
+
+Course Policies
+
+Extra Credit
+Extra credit will be assigned to active class participation (up to 5%).
+
+Course Attendance
+Attendance is essential for learning objectives in this course due to the extensive
+material we’ll cover. However, there’s no formal attendance mandate.
+
+Sajjad Amini
+
+IML-L01
+
+8 / 14
+
+Course Policies
+
+Late Submissions
+You can use a total of 10 permissible late days for all homework
+assignments.
+You can use a maximum extension of 3 days for any single homework.
+Assignment grade reduces by 0.95 compounding factor for each day
+overdue beyond allowed late days.
+Solutions released 3 days post-deadline; homework not accepted
+afterward.
+
+Sajjad Amini
+
+IML-L01
+
+9 / 14
+
+Academic Honesty Statement
+
+Academic Honesty Statement
+Please avoid academic dishonesty including:
+Cheating
+Fabrication
+Plagiarism
+Facilitating Dishonesty
+
+Sajjad Amini
+
+IML-L01
+
+10 / 14
+
+Academic Honesty Statement
+
+Academic Honesty Statement
+Please avoid academic dishonesty including:
+Cheating
+Fabrication
+Plagiarism
+Facilitating Dishonesty
+
+Sanctions for acts of academic dishonesty.
+
+Sajjad Amini
+
+IML-L01
+
+10 / 14
+
+Academic Honesty Statement
+
+Academic Honesty Statement
+Please avoid academic dishonesty including:
+Cheating
+Fabrication
+Plagiarism
+Facilitating Dishonesty
+
+Sanctions for acts of academic dishonesty.
+Make sure to contact me whenever you have questions regarding
+Academic Honesty
+
+Sajjad Amini
+
+IML-L01
+
+10 / 14
+
+Academic Honesty Statement
+
+Cheating
+The course teaching team are so strict about cheating so:
+Don’t Try Us Please!
+
+Sajjad Amini
+
+IML-L01
+
+11 / 14
+
+Academic Honesty Statement
+
+Cheating
+The course teaching team are so strict about cheating so:
+Don’t Try Us Please!
+Missing a question, homework or even dropping the course is a much
+better way than cheating and accepting the risk.
+
+Sajjad Amini
+
+IML-L01
+
+11 / 14
+
+Academic Honesty Statement
+
+Cheating
+The course teaching team are so strict about cheating so:
+Don’t Try Us Please!
+Missing a question, homework or even dropping the course is a much
+better way than cheating and accepting the risk.
+Pay attention! If you look at the solution on the web or your friend’s
+homework, your mind is biased toward those writing and you are at the
+risk of being identified as a cheater.
+
+Sajjad Amini
+
+IML-L01
+
+11 / 14
+
+Academic Honesty Statement
+
+Cheating
+The course teaching team are so strict about cheating so:
+Don’t Try Us Please!
+Missing a question, homework or even dropping the course is a much
+better way than cheating and accepting the risk.
+Pay attention! If you look at the solution on the web or your friend’s
+homework, your mind is biased toward those writing and you are at the
+risk of being identified as a cheater.
+Just search or talk with your classmates about high-level ideas.
+
+Sajjad Amini
+
+IML-L01
+
+11 / 14
+
+Academic Honesty Statement
+
+Cheating
+The course teaching team are so strict about cheating so:
+Don’t Try Us Please!
+Missing a question, homework or even dropping the course is a much
+better way than cheating and accepting the risk.
+Pay attention! If you look at the solution on the web or your friend’s
+homework, your mind is biased toward those writing and you are at the
+risk of being identified as a cheater.
+Just search or talk with your classmates about high-level ideas.
+All homework series, midterms and final will be precisely checked for
+possible cheating.
+
+Sajjad Amini
+
+IML-L01
+
+11 / 14
+
+Main Textbook
+
+Sajjad Amini
+
+IML-L01
+
+12 / 14
+
+Textbook
+
+Sajjad Amini
+
+IML-L01
+
+13 / 14
+
+LMS and Contacting Me
+
+Learning Management Systems
+For this course, we will use Sharif courseware (CW) for course materials.
+
+Sajjad Amini
+
+IML-L01
+
+14 / 14
+
+LMS and Contacting Me
+
+Learning Management Systems
+For this course, we will use Sharif courseware (CW) for course materials.
+
+Contacting Me
+Office hours: Monday - 16:30 to 17:30 PM
+
+Sajjad Amini
+
+IML-L01
+
+14 / 14
+
+LMS and Contacting Me
+
+Learning Management Systems
+For this course, we will use Sharif courseware (CW) for course materials.
+
+Contacting Me
+Office hours: Monday - 16:30 to 17:30 PM
+If Office hours do not work for you, send me a request via email.
+
+Sajjad Amini
+
+IML-L01
+
+14 / 14
+
+
