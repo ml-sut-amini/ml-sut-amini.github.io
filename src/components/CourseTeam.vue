@@ -14,8 +14,8 @@ const courseInstructor = {
 const courseHeadAssistants = {
   title: 'Course Head Assistants',
   people: [
-    {firstName: 'Borna', lastName: 'Khodabandeh', avatar: 'Khodabandeh.jpg', email: 'borna710kh@gmail.com'},
-    {firstName: 'Amir Abbas', lastName: 'Afzali', avatar: 'Afzali.jpg', email: 'amir8afzali@gmail.com'}
+    {firstName: 'Borna', lastName: 'Khodabandeh', avatar: 'Khodabandeh.jpg', email: 'borna710kh@gmail.com', personalWebsite: ''},
+    {firstName: 'Amir Abbas', lastName: 'Afzali', avatar: 'Afzali.jpg', email: 'amir8afzali@gmail.com', personalWebsite: ''}
   ]
 };
 
@@ -72,7 +72,7 @@ const courseAssistants = {
                   :firstName="headAssistant.firstName"
                   :lastName="headAssistant.lastName"
                   :avatar="headAssistant.avatar"
-                  :personal-website="headAssistant.personalWebsite"
+                  :personal-website="headAssistant.personalWebsite" 
               />
             </div>
           </div>
