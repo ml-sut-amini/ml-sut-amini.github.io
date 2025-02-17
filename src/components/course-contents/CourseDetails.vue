@@ -5,67 +5,67 @@ const presentations = ref([
   {
     title: "L00. Course Logistics",
     description: "Course Overview, Policies, and Requirements",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14012_L00_Course_Logistics.pdf",
+    link: "/files/slides/IML_14012_L00_Course_Logistics.pdf",
     available: true
   },
   {
     title: "L01. Introduction",
     description: "Problem Formulation in Machine Learning, Types of Learning",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L01_Introduction.pdf",
+    link: "/files/slides/IML_14032_L01_Introduction.pdf",
     available: true
   },
   {
     title: "L02. Univariate & Multivariate Probability",
     description: "Probability Concepts, Distributions, Joint Probabilities",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L02_Univariate_Multivariate_Probability.pdf",
+    link: "/files/slides/IML_14032_L02_Univariate_Multivariate_Probability.pdf",
     available: false
   },
   {
     title: "L04. Statistics",
     description: "Statistical Concepts and Applications in Machine Learning",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L04_Statistics.pdf",
+    link: "/files/slides/IML_14032_L04_Statistics.pdf",
     available: false
   },
   {
     title: "L05. Linear Algebra",
     description: "Essential Linear Algebra Concepts for Machine Learning",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L05_Linear_Algebra.pdf",
+    link: "/files/slides/IML_14032_L05_Linear_Algebra.pdf",
     available: false
   },
   {
     title: "L06-L07. Optimization & Logistic Regression",
     description: "Optimization Techniques, Logistic Regression Theory and Applications",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L06_L07_Optimization_Logistic.pdf",
+    link: "/files/slides/IML_14032_L06_L07_Optimization_Logistic.pdf",
     available: false
   },
   {
     title: "L08-L09. Discriminant Analysis & Linear Regression",
     description: "Discriminant Analysis Methods, Linear Regression Models",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L08_L09_DA_Linear.pdf",
+    link: "/files/slides/IML_14032_L08_L09_DA_Linear.pdf",
     available: false
   },
   {
     title: "L10-L11. Neural Networks",
     description: "MultiLayer Perceptron, Convolutional Neural Networks",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L10_L11_Neural_Networks.pdf",
+    link: "/files/slides/IML_14032_L10_L11_Neural_Networks.pdf",
     available: false
   },
   {
     title: "L12. Kernel Methods",
     description: "Kernel-based Learning Algorithms",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L12_Kernel_Methods.pdf",
+    link: "/files/slides/IML_14032_L12_Kernel_Methods.pdf",
     available: false
   },
   {
     title: "L13-L14. Decision Trees & Dimensionality Reduction",
     description: "Decision Tree Algorithms, Dimensionality Reduction Techniques",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L13_L14_Trees_Dim_Reduction.pdf",
+    link: "/files/slides/IML_14032_L13_L14_Trees_Dim_Reduction.pdf",
     available: false
   },
   {
     title: "L15. Reinforcement Learning",
     description: "Introduction to Reinforcement Learning Concepts",
-    link: "/ml-sut-amini.github.io/public/files/slides/IML_14032_L15_Reinforcement_Learning.pdf",
+    link: "/files/slides/IML_14032_L15_Reinforcement_Learning.pdf",
     available: false
   }
 ]);
