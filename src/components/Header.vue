@@ -32,16 +32,11 @@ const scrollToSection = (sectionId) => {
     <img src="/sharif-logo-png-transparent.png" alt="logo" style="height: 50px;">
     <div class="inner-navbar">
       <ul class="inner-navbar-list hidden lg-flex">
-        <li class="navbar-item" @click="scrollToSection('home')">Home</li>
-        <li class="navbar-item" @click="scrollToSection('team')">Team</li>
-        <li class="navbar-item" @click="scrollToSection('course')">Course Details</li>
-        <li class="navbar-item" @click="scrollToSection('schedule')">Schedule</li>
-        <li class="navbar-item" @click="scrollToSection('contact')">Contact</li>
-        <!--        <li class="navbar-item"><a href="#" @click.prevent="scrollToSection('home')">Home</a></li>-->
-        <!--        <li class="navbar-item"><a href="#" @click.prevent="scrollToSection('team')">Team</a></li>-->
-        <!--        <li class="navbar-item"><a href="#" @click.prevent="scrollToSection('course')">Course Details</a></li>-->
-        <!--        <li class="navbar-item"><a href="#" @click.prevent="scrollToSection('schedule')">Schedule</a></li>-->
-        <!--        <li class="navbar-item"><a href="#" @click.prevent="scrollToSection('contact')">Contact</a></li>-->
+        <li class="navbar-item any-link" @click="scrollToSection('home')">Home</li>
+        <li class="navbar-item any-link" @click="scrollToSection('team')">Team</li>
+        <li class="navbar-item any-link" @click="scrollToSection('course')">Course Details</li>
+        <li class="navbar-item any-link" @click="scrollToSection('schedule')">Schedule</li>
+        <li class="navbar-item any-link" @click="scrollToSection('contact')">Contact</li>
       </ul>
     </div>
     <button class="lg-hidden hamburger-button" @click="mobileMenuOpen = true" aria-label="hamburger-button">
