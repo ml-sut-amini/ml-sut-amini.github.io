@@ -7,14 +7,14 @@
       <div class="sub-title">Class Schedule</div>
       <div class="sub-content">
         <ul>
-        <li>The class is scheduled for Sundays and Tuesdays from 12:00 to 13:30.</li>
-        <li>Classes will be held <span class="font-bold">in person</span>;</li>
-        <li>However, under special circumstances, the class might be held virtually with prior announcements.</li>
-        <li>The virtual class link is:
-          <a class="any-link" href="https://vc.sharif.edu/s-amini" target="_blank">
-            https://vc.sharif.edu/s-amini
-          </a>
-        </li>
+          <li>The class is scheduled for Saturdays and Mondays from 15:00 to 16:30.</li>
+          <li>Classes will be held <span class="font-bold">in person</span>.</li>
+          <li>However, under special circumstances, the class might be held virtually with prior announcements.</li>
+          <li>The virtual class link is:
+            <a class="any-link" href="https://vc.sharif.edu/s-amini" target="_blank">
+              https://vc.sharif.edu/s-amini
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,11 +38,10 @@
     <div class="sub-section-content">
       <div class="sub-title">Exams</div>
       <div class="sub-content">
-        <p>Students' performance will be evaluated through two Midterm Exams and one Final Exam:</p>
+        <p>Students' performance will be evaluated through a Midterm Exam and one Final Exam:</p>
         <ul>
-          <li><span class="font-bold">Midterm Exam 1:</span> 1403/08/15 during class time.</li>
-          <li><span class="font-bold">Midterm Exam 2:</span> 1403/09/13 during class time.</li>
-          <li><span class="font-bold">Final Exam:</span> 1403/11/03   15:00</li>
+          <li><span class="font-bold">Midterm Exam:</span> 1404/02/04</li>
+          <li><span class="font-bold">Final Exam:</span> 1404/03/31 08:00</li>
         </ul>
       </div>
     </div>
@@ -52,7 +51,8 @@
       <div class="sub-title">Homework</div>
       <div class="sub-content">
         <ul>
-          <li>Four series of homework assignments will be given throughout this course.</li>
+          <li>Six series of homework assignments will be given throughout this course.</li>
+          <li>Each homework will contain both theoretical questions and implementation tasks.</li>
           <li>Homework assignments have to be submitted on <a class="any-link" href="https://cw.sharif.edu/" target="_blank">CW</a>.</li>
           <li>Late submissions will be accepted with no penalty up to 3 days for each assignment with a total delay of 10 days for all of them.</li>
           <li>Assignment grade reduces by 0.95 compounding factor for each day overdue beyond allowed late days.</li>
@@ -66,33 +66,7 @@
     <div class="sub-section-content">
       <div class="sub-title">Project</div>
       <div class="sub-content">
-        <p style="line-height: 1.6; margin-bottom: 15px;">
-          This section outlines the pipeline for the course project, providing a structured approach to guide students through the different stages of their research work. The project is divided into three main steps: Project Setup, Literature Review, and Research and Execution.
-          <u>Students are expected to continuously work on their project throughout the semester, ensuring steady progress and timely completion of each phase.</u>
-        </p>
-
-        <h4>Step 1: Project Setup</h4>
-        <ol>
-          <li>Relevant papers and research areas are suggested.</li>
-          <li>Students select a research area and form groups (2 students per group).</li>
-          <li>Group formations and chosen research areas are verified.</li>
-          <li>Mentors are assigned to each group.</li>
-          <li>Students draft and submit a project proposal.</li>
-        </ol>
-
-        <h4>Step 2: Literature Review</h4>
-        <ol>
-          <li>Students read related papers in the chosen research area.</li>
-          <li>Prepare and present a literature review covering previous works.</li>
-          <li>Identify a novel idea or problem to tackle based on the review.</li>
-        </ol>
-
-        <h4>Step 3: Research and Execution</h4>
-        <ol>
-          <li>Conduct research on the identified problem.</li>
-          <li>Prove or simulate the solution and obtain results.</li>
-          <li>Write a report (pseudo-paper) summarizing the work and prepare the final presentation.</li>
-        </ol>
+        <p>Project details will be announced during the semester.</p>
       </div>
     </div>
   </div>

@@ -19,7 +19,6 @@ import ClassDetails from './components/course-contents/ClassDetails.vue'
     <CourseContents id="course"/>
     <CourseSchedule id="schedule"/>
     <Contact id="contact"/>
-    <ClassDetails />
     <Footer />
     <Test />
   </main>

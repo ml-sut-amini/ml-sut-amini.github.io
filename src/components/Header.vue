@@ -127,18 +127,20 @@ const scrollToSection = (sectionId) => {
   padding: 15px 0;
 }
 
+
 .navbar-item {
   min-width: fit-content;
   height: 100%;
   font-size: 1.1rem;
   margin-left: 3rem;
   cursor: pointer;
+  color: var(--text-color);
+  transition: color var(--transition-speed) var(--transition-timing);
 }
 
-.navbar-item::marker {
-  content: "";
+.navbar-item:hover {
+  color: var(--primary-color);
 }
-
 .hidden {
   display: none;
 }
@@ -211,8 +213,20 @@ const scrollToSection = (sectionId) => {
   display: flow-root;
 }
 
-.flow-root-inner {
+.flow-root-inner-2 > .flow-item {
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  display: block;
+  text-decoration: inherit;
+  cursor: pointer;
+}
 
+.flow-root-inner-2 > .flow-item:hover {
+  color: var(--primary-color);
 }
 
 .flow-root-inner-2 {
@@ -230,6 +244,10 @@ const scrollToSection = (sectionId) => {
   display: block;
   text-decoration: inherit;
   cursor: pointer;
+}
+
+.flow-root-inner-2 > .flow-item:hover {
+  color: var(--primary-color);
 }
 
 @media (min-width: 900px) {

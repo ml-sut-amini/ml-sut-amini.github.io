@@ -1,5 +1,5 @@
 <script setup>
-const sampleTitle = 'Schedule';
+const sectionTitle = 'Course Schedule';
 </script>
 
 <script>
@@ -10,9 +10,9 @@ export default {
         {
           event: 'normal',
           number: 1,
-          date: '1403/07/01',
+          date: '1403/11/27',
           topics: [
-            {topic: 'Logistics', link: '/files/presentation-slides/DGM_Presentation-0_Logistics.pdf'},
+            {topic: 'L00 - Logistics', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -20,9 +20,9 @@ export default {
         {
           event: 'normal',
           number: 2,
-          date: '1403/07/03',
+          date: '1403/11/29',
           topics: [
-            {topic: 'Introduction', link: '/files/presentation-slides/DGM_Presentation-1_Introduction.pdf'},
+            {topic: 'L01 - Introduction', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -30,30 +30,30 @@ export default {
         {
           event: 'normal',
           number: 3,
-          date: '1403/07/08',
+          date: '1403/12/04',
           topics: [
-            {topic: 'Foundations', link: '/files/presentation-slides/DGM_Presentation-2_Foundation.pdf'},
-          ],
-          coursework: 'HW 1 Released',
-          homework: '/files/assignments/DGM_HW1.zip',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 4,
-          date: '1403/07/10',
-          topics: [
-            {topic: 'Deep Autoregressive Models', link: '/files/presentation-slides/DGM_Presentation-3_Deep Autoregressive Models.pdf'},
+            {topic: 'L01 - Introduction', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
         {
+          event: 'release',
+          number: 4,
+          date: '1403/12/06',
+          topics: [
+            {topic: 'L02 - Univariate Probability', link: ''},
+          ],
+          coursework: 'HW1 Release (L00 to L03)',
+          homework: '',
+          deadline: ''
+        },
+        {
           event: 'normal',
           number: 5,
-          date: '1403/07/15',
+          date: '1403/12/11',
           topics: [
-            {topic: 'Deep Autoregressive Models', link: ''},
+            {topic: 'L02 - Univariate Probability', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -61,9 +61,9 @@ export default {
         {
           event: 'normal',
           number: 6,
-          date: '1403/07/17',
+          date: '1403/12/13',
           topics: [
-            {topic: 'Deep Autoregressive Models', link: ''},
+            {topic: 'L03 - Multivariate Probability', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -71,50 +71,40 @@ export default {
         {
           event: 'normal',
           number: 7,
-          date: '1403/07/22',
+          date: '1403/12/18',
           topics: [
-            {topic: 'Deep Variational Autoencoders', link: '/files/presentation-slides/DGM_Presentation-4_Variational Autoencoders.pdf'},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 8,
-          date: '1403/07/24',
-          topics: [
-            {topic: 'Deep Variational Autoencoders', link: ''},
+            {topic: 'L04 - Statistics', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
         {
           event: 'deadline',
-          number: '',
-          date: 'Thu 1403/07/26',
+          number: 8,
+          date: '1403/12/20',
           topics: [
-            {topic: '', link: ''},
-          ],
-          coursework: 'HW 2 Release',
-          homework: '/files/assignments/DGM_HW2.zip',
-          deadline: 'HW 1 Deadline'
-        },
-        {
-          event: 'normal',
-          number: 9,
-          date: '1403/07/29',
-          topics: [
-            {topic: 'Deep Variational Autoencoders', link: ''},
+            {topic: 'L04 - Statistics', link: ''},
           ],
           coursework: '',
+          deadline: 'HW1'
+        },
+        {
+          event: 'release',
+          number: 9,
+          date: '1403/12/25',
+          topics: [
+            {topic: 'L04 - Statistics', link: ''},
+          ],
+          coursework: 'HW2 Release (L04 to L06)',
+          homework: '',
           deadline: ''
         },
         {
           event: 'normal',
           number: 10,
-          date: '1403/08/01',
+          date: '1403/12/27',
           topics: [
-            {topic: 'Deep Variational Autoencoders', link: ''},
+            {topic: 'L05 - Linear Algebra', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -122,9 +112,9 @@ export default {
         {
           event: 'normal',
           number: 11,
-          date: '1403/08/06',
+          date: '1404/01/16',
           topics: [
-            {topic: 'Normalizing Flow Models', link: '/files/presentation-slides/DGM_Presentation-5_Flow Models.pdf'},
+            {topic: 'L06 - Optimization', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -132,50 +122,40 @@ export default {
         {
           event: 'normal',
           number: 12,
-          date: '1403/08/08',
+          date: '1404/01/18',
           topics: [
-            {topic: 'Normalizing Flow Models', link: ''},
+            {topic: 'L07 - Logistic Regression', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
         {
           event: 'deadline',
-          number: '',
-          date: 'Thu 1403/08/10',
-          topics: [
-            {topic: '', link: ''},
-          ],
-          coursework: 'HW 3 Release',
-          homework: '/files/assignments/DGM_HW3.zip',
-          deadline: 'HW 2 Deadline'
-        },
-        {
-          event: 'normal',
           number: 13,
-          date: '1403/08/13',
+          date: '1404/01/23',
           topics: [
-            {topic: 'Normalizing Flow Models', link: ''},
+            {topic: 'L07 - Logistic Regression', link: ''},
           ],
           coursework: '',
-          deadline: ''
+          deadline: 'HW2'
         },
         {
-          event: 'exam',
+          event: 'release',
           number: 14,
-          date: '1403/08/15',
+          date: '1404/01/25',
           topics: [
-            {topic: 'Midterm Exam 1 (Autoregressive, VAE)', link: ''},
+            {topic: 'L08 - Discriminant Analysis', link: ''},
           ],
-          coursework: '',
+          coursework: 'HW3 Release (L07 to L09)',
+          homework: '',
           deadline: ''
         },
         {
           event: 'normal',
           number: 15,
-          date: '1403/08/20',
+          date: '1404/01/30',
           topics: [
-            {topic: 'Normalizing Flow Models', link: ''},
+            {topic: 'L09 - Linear Regression', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -183,120 +163,111 @@ export default {
         {
           event: 'normal',
           number: 16,
-          date: '1403/08/22',
+          date: '1404/02/01',
           topics: [
-            {topic: 'Generative Adversarial Nets', link: '/files/presentation-slides/DGM_Presentation-6_GAN.pdf'},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 17,
-          date: '1403/08/27',
-          topics: [
-            {topic: 'Generative Adversarial Nets', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 18,
-          date: '1403/08/29',
-          topics: [
-            {topic: 'Generative Adversarial Nets', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 19,
-          date: '1403/09/04',
-          topics: [
-            {topic: 'Generative Adversarial Nets', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 20,
-          date: '1403/09/06',
-          topics: [
-            {topic: 'Energy-Based Models', link: '/files/presentation-slides/DGM_Presentation-7_Energy Based Models.pdf'},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'deadline',
-          number: '',
-          date: 'Thu 1403/09/08',
-          topics: [
-            {topic: '', link: ''},
-          ],
-          coursework: '',
-          deadline: 'HW 3 Deadline'
-        },
-        {
-          event: 'normal',
-          number: 21,
-          date: '1403/09/11',
-          topics: [
-            {topic: 'Energy-Based Models', link: ''},
+            {topic: 'L09 - Linear Regression', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
         {
           event: 'exam',
-          number: 22,
-          date: '1403/09/13',
+          number: 17,
+          date: '1404/02/04',
           topics: [
-            {topic: 'Midterm Exam 2 (Flow Models, GAN)', link: ''},
+            {topic: 'Midterm Exam', link: ''},
           ],
           coursework: '',
           deadline: ''
+        },
+        {
+          event: 'release',
+          number: 18,
+          date: '1404/02/06',
+          topics: [
+            {topic: 'L10 - MultiLayer Perceptron', link: ''},
+          ],
+          coursework: 'HW4 Release (L10 to L11)',
+          homework: '',
+          deadline: ''
+        },
+        {
+          event: 'deadline',
+          number: 19,
+          date: '1404/02/08',
+          topics: [
+            {topic: 'L10 - MultiLayer Perceptron', link: ''},
+          ],
+          coursework: '',
+          deadline: 'HW3'
+        },
+        {
+          event: 'normal',
+          number: 20,
+          date: '1404/02/13',
+          topics: [
+            {topic: 'L11 - Convolutional Neural Networks', link: ''},
+          ],
+          coursework: '',
+          deadline: ''
+        },
+        {
+          event: 'normal',
+          number: 21,
+          date: '1404/02/15',
+          topics: [
+            {topic: 'L12 - Kernel Methods', link: ''},
+          ],
+          coursework: '',
+          deadline: ''
+        },
+        {
+          event: 'deadline',
+          number: 22,
+          date: '1404/02/20',
+          topics: [
+            {topic: 'L12 - Kernel Methods', link: ''},
+          ],
+          coursework: '',
+          deadline: 'HW4'
         },
         {
           event: 'normal',
           number: 23,
-          date: '1403/09/18',
+          date: '1404/02/22',
           topics: [
-            {topic: 'Energy-Based Models', link: ''},
+            {topic: 'L12 - Kernel Methods', link: ''},
           ],
-          coursework: 'HW 4 Release',
-          homework: '/files/assignments/DGM_HW4.zip',
+          coursework: '',
           deadline: ''
         },
         {
-          event: 'normal',
+          event: 'release',
           number: 24,
-          date: '1403/09/20',
+          date: '1404/02/27',
           topics: [
-            {topic: 'Energy-Based Models', link: ''},
+            {topic: 'L12 - Kernel Methods', link: ''},
           ],
-          coursework: '',
+          coursework: 'HW5 Release (L12 to L13)',
           deadline: ''
         },
         {
           event: 'normal',
           number: 25,
-          date: '1403/09/25',
+          date: '1404/02/29',
           topics: [
-            {topic: 'Diffusion Models', link: '/files/presentation-slides/DGM_Presentation-8_Diffusion Models.pdf'},
+            {topic: 'L13 - Decision Tree', link: ''},
           ],
           coursework: '',
+          homework: '',
           deadline: ''
         },
         {
           event: 'normal',
           number: 26,
-          date: '1403/09/27',
+          date: '1404/03/03',
           topics: [
-            {topic: 'Diffusion Models', link: ''},
+            {topic: 'L13 - Decision Tree', link: ''},
           ],
           coursework: '',
           deadline: ''
@@ -304,78 +275,68 @@ export default {
         {
           event: 'normal',
           number: 27,
-          date: '1403/09/02',
+          date: '1404/03/05',
           topics: [
-            {topic: 'Diffusion Models', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 28,
-          date: '1403/09/04',
-          topics: [
-            {topic: 'Diffusion Models', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 29,
-          date: '1403/10/09',
-          topics: [
-            {topic: 'Diffusion Models', link: ''},
-          ],
-          coursework: '',
-          deadline: ''
-        },
-        {
-          event: 'normal',
-          number: 30,
-          date: '1403/10/11',
-          topics: [
-            {topic: 'Evaluation Methods', link: ''},
+            {topic: 'L14 - Dimensionality Reduction', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
         {
           event: 'deadline',
-          number: '',
-          date: 'Fri 1403/10/14',
+          number: 28,
+          date: '1404/03/10',
           topics: [
-            {topic: '', link: ''},
+            {topic: 'L14 - Dimensionality Reduction', link: ''},
           ],
           coursework: '',
-          deadline: 'HW 4 Deadline'
+          homework: '',
+          deadline: 'HW5'
         },
         {
-          event: 'exam',
-          number: '',
-          date: '1403/11/03',
+          event: 'release',
+          number: 29,
+          date: '1404/03/12',
           topics: [
-            {topic: 'Final Exam 15:00', link: ''},
+            {topic: 'L14 - Dimensionality Reduction', link: ''},
+          ],
+          coursework: 'HW6 Release (L14 to L15)',
+          deadline: ''
+        },
+        {
+          event: 'normal',
+          number: 30,
+          date: '1404/03/17',
+          topics: [
+            {topic: 'L15 - Reinforcement Learning', link: ''},
           ],
           coursework: '',
           deadline: ''
         },
-        // Add more sessions as needed
+        {
+          event: 'normal',
+          number: 31,
+          date: '1404/03/19',
+          topics: [
+            {topic: 'L15 - Reinforcement Learning', link: ''},
+          ],
+          coursework: '',
+          deadline: ''
+        }
       ]
     }
   },
   methods: {
-    rowClass(event) {
+    getRowClass(event) {
       switch (event) {
-        case 'normal':
-          return 'bg-gray-100';
-        case 'deadline':
-          return 'bg-red-100';
         case 'exam':
-          return 'bg-yellow-100';
-        case 'off':
-          return '';
+          return 'exam-row';
+        case 'deadline':
+          return 'deadline-row';
+        case 'release':
+          return 'release-row';
+        case 'normal':
+          return 'normal-row';
         default:
           return '';
       }
@@ -387,45 +348,31 @@ export default {
 <template>
   <div class="section">
     <div class="section-content">
-      <div class="title">{{ sampleTitle }}</div>
-<!--      <div class="content text-gray-600 text-md">{{ shortDescription }}</div>-->
-      <div class="container">
-<!--        <h2 class="text-2xl font-bold mb-4 text-center">Lecture Schedule</h2>-->
-        <div class="table-container">
-          <table class="table-class">
-            <thead>
-            <tr class="table-head-row">
-              <th class="table-head-item">Session</th>
-              <th class="table-head-item">Date</th>
-              <th class="table-head-item">Lecture Topics</th>
-              <th class="table-head-item">Events</th>
-              <th class="table-head-item">Deadline</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(session, index) in sessions" :key="index" :class="rowClass(session.event)" class="table-body-row transition-colors">
-              <td>{{ session.number }}</td>
-              <td>{{ session.date }}</td>
-              <td class="lecture-topics">
-                <template v-for="(item, i) in session.topics" :key="i">
-                  <p>{{ item.topic }}
-                  <span v-if="item.link !== ''">
-                    [<a style="width: fit-content; color: blue;" :href="item.link" target="_blank">Slide</a>]
-                  </span>
-                  <span v-if="i !== session.topics.length - 1">, </span>
-                  </p>
-                </template>
-              </td>
-              <td class="event">
-                <a v-if="'homework' in session" style="text-decoration: underline;" :href="session.homework" target="_blank" download>
-                  {{ session.coursework }}
-                </a>
-                <p v-else>{{ session.coursework }}</p>
-              </td>
-              <td class="deadline">{{ session.deadline }}</td>
-            </tr>
-            </tbody>
-          </table>
+      <div class="title font-bold text-3xl sm:text-4xl">{{ sectionTitle }}</div>
+      <div class="sub-section">
+        <div class="sub-section-content">
+          <div class="schedule-grid">
+            <div class="schedule-header">
+              <div class="header-cell">#</div>
+              <div class="header-cell">Date</div>
+              <div class="header-cell">Topics</div>
+              <div class="header-cell">Coursework</div>
+              <div class="header-cell">Deadline</div>
+            </div>
+            <div v-for="session in sessions" :key="session.number" 
+                 :class="['schedule-row', getRowClass(session.event)]">
+              <div class="cell">{{ session.number }}</div>
+              <div class="cell">{{ session.date }}</div>
+              <div class="cell topics">
+                <div v-for="(topic, index) in session.topics" :key="index">
+                  <a v-if="topic.link" :href="topic.link" class="any-link">{{ topic.topic }}</a>
+                  <span v-else>{{ topic.topic }}</span>
+                </div>
+              </div>
+              <div class="cell">{{ session.coursework }}</div>
+              <div class="cell">{{ session.deadline }}</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="sub-section">
@@ -433,13 +380,38 @@ export default {
           <div class="sub-title">Additional Materials</div>
           <div class="sub-content">
             <ul>
-              <li><a class="any-link" href="http://yang-song.github.io/blog/2021/score/">Generative Modeling by Estimating Gradients of the Data Distribution.</a> Yang Song. Blog post on score-based generative models, May 2021.</li>
-              <li><a class="any-link" href="https://arxiv.org/abs/2101.03288">How to Train Your Energy-Based Models.</a> Yang Song and Diederik P. Kingma. February 2021. </li>
-              <li><a class="any-link" href="https://ermongroup.github.io/generative-models/">Tutorial on Deep Generative Models.</a> Aditya Grover and Stefano Ermon. International Joint Conference on Artificial Intelligence, July 2018.</li>
-              <li><a class="any-link" href="https://sites.google.com/view/cvpr2018tutorialongans/">Tutorial on Generative Adversarial Networks.</a> Computer Vision and Pattern Recognition, June 2018.</li>
-              <li><a class="any-link" href="https://www.youtube.com/watch?v=JrO5fSskISY">Tutorial on Deep Generative Models.</a> Shakir Mohamed and Danilo Rezende. Uncertainty in Artificial Intelligence, July 2017.</li>
-              <li><a class="any-link" href="https://www.youtube.com/watch?v=AJVyzd0rqdc">Tutorial on Generative Adversarial Networks.</a> Ian Goodfellow. Neural Information Processing Systems, December 2016.</li>
-              <li><a class="any-link" href="https://www.cs.cmu.edu/~rsalakhu/papers/annrev.pdf">Learning deep generative models.</a> Ruslan Salakhutdinov. Annual Review of Statistics and Its Application, April 2015.</li>
+              <li class="material-category">Main Textbooks:</li>
+              <li class="material-item">
+                <a class="any-link" href="https://probml.github.io/pml-book/">Probabilistic Machine Learning</a> 
+                <span class="material-description">by Kevin Murphy. MIT Press, 2022.</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online">Bayesian Reasoning and Machine Learning</a>
+                <span class="material-description">by David Barber. Cambridge University Press, 2012.</span>
+              </li>
+              
+              <li class="material-category mt-4">Online Courses & Lectures:</li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN">Machine Learning by Andrew Ng</a>
+                <span class="material-description">- Stanford University/Coursera</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.cs.cornell.edu/courses/cs4780/2018fa/">Machine Learning for Intelligent Systems</a>
+                <span class="material-description">- Cornell University</span>
+              </li>
+              
+              <li class="material-category mt-4">Additional Resources:</li>
+              <li><a class="any-link" href="https://d2l.ai/">Dive into Deep Learning</a> - Interactive deep learning book with code</li>
+              <li><a class="any-link" href="https://www.deeplearningbook.org/">Deep Learning</a> by Goodfellow, Bengio, and Courville</li>
+              <li><a class="any-link" href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn Tutorials</a> - For practical implementation</li>
+              
+              <li class="material-category mt-4">Math Prerequisites Review:</li>
+              <li><a class="any-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Essence of Linear Algebra</a> by 3Blue1Brown</li>
+              <li><a class="any-link" href="https://seeing-theory.brown.edu/">Seeing Theory</a> - Visual introduction to probability and statistics</li>
+              
+              <li class="material-category mt-4">Implementation Resources:</li>
+              <li><a class="any-link" href="https://pytorch.org/tutorials/">PyTorch Tutorials</a> - Official tutorials and examples</li>
+              <li><a class="any-link" href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a> - Official guides and tutorials</li>
             </ul>
           </div>
         </div>
@@ -449,17 +421,104 @@ export default {
 </template>
 
 <style scoped>
+.schedule-grid {
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.schedule-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 1fr;
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.header-cell {
+  padding: 1rem;
+  text-align: center;
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 1fr;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.normal-row {
+  background-color: var(--vt-c-white-soft);
+}
+
+.exam-row {
+  background-color: rgba(251, 191, 36, 0.15); /* Amber/yellow for exams */
+  font-weight: 600;
+}
+
+.deadline-row {
+  background-color: rgba(239, 68, 68, 0.1); /* Red for deadlines */
+  font-weight: 500;
+}
+
+.release-row {
+  background-color: rgba(16, 185, 129, 0.1); /* Light green for releases */
+  font-weight: 500;
+}
+
+.normal-row:hover {
+  background-color: var(--vt-c-white-mute);
+}
+
+.exam-row:hover {
+  background-color: rgba(251, 191, 36, 0.25);
+}
+
+.deadline-row:hover {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.release-row:hover {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.cell {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topics {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.any-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  position: relative;
+}
+
 .event > p, a {
   font-weight: bold;
-  color: #181e4b;
+  color: var(--text-color);
 }
 
 .event > a {
   cursor: pointer;
+  color: var(--accent-color);
+  text-decoration: underline;
+  transition: color var(--transition-speed) var(--transition-timing);
+}
+
+.event > a:hover {
+  color: var(--accent-color-2);
 }
 
 .deadline {
-  color: red;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -468,49 +527,59 @@ export default {
 }
 
 .table-container {
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   overflow-x: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  margin: 1rem 0;
 }
 
 .table-class {
-  background-color: rgb(255 255 255);
-  border-color: rgb(229 231 235);
-  border-width: 1px;
+  background-color: var(--light-color);
   min-width: 100%;
   text-indent: 0;
 }
 
 .table-head-row {
   text-align: left;
-  color: rgb(255 255 255);
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .table-head-item {
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .table-body-row {
   border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-speed) var(--transition-timing);
+}
+
+.table-body-row:hover {
+  background-color: var(--dark-color);
 }
 
 table {
   border-collapse: collapse;
 }
+
 th, td {
-  padding: 12px;
+  padding: 1rem;
   height: fit-content;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   border-left: 1px solid var(--border-color);
   text-align: center;
   min-height: 50px;
+  color: var(--text-color);
 }
+
 thead {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--dark-color);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .sub-section .sub-title {
@@ -520,17 +589,77 @@ thead {
 .lecture-topics {
   display: flex;
   justify-content: space-evenly;
-  color: #181e4b;
+  color: var(--text-color);
   font-weight: 500;
+  padding: 0.5rem;
+}
+
+.lecture-topics a {
+  color: var(--primary-color);
+  transition: color var(--transition-speed) var(--transition-timing);
+}
+
+.lecture-topics a:hover {
+  color: var(--accent-color-2);
+}
+
+.material-category {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.material-item {
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.material-description {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 0.95rem;
 }
 
 .any-link {
+  font-weight: 500;
+  color: var(--primary-color);
   text-decoration: none;
-  color: #1e88e5;
+  position: relative;
 }
 
 .any-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.any-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.any-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mt-4 {
+  margin-top: 1.25rem;
 }
 
 .transition-colors {
@@ -540,27 +669,27 @@ thead {
 }
 
 .bg-gray-100 {
-  background-color: #f5f5f5;
+  background-color: var(--light-color);
 }
 
 .bg-yellow-100 {
-  background-color: rgb(254 249 195);
+  background-color: rgba(251, 191, 36, 0.1);
 }
 
 .bg-red-100 {
-  background-color: rgb(254 226 226);
+  background-color: rgba(239, 68, 68, 0.1);
 }
 
 .bg-gray-100:hover {
-  background-color: var(--vt-c-white-mute);
+  background-color: rgba(243, 244, 246, 0.4);
 }
 
 .bg-yellow-100:hover {
-  background-color: rgb(254 239 175);
+  background-color: rgba(251, 191, 36, 0.2);
 }
 
 .bg-red-100:hover {
-  background-color: rgb(254 206 206);
+  background-color: rgba(239, 68, 68, 0.2);
 }
 
 @media (max-width: 1024px) {

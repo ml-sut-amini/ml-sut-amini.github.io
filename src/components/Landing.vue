@@ -9,7 +9,7 @@ const props = defineProps({
   description: {
     type: String,
     required: false,
-    default: 'IML-L01 - Spring 2024'
+    default: 'IML-25737-2 - Spring 2024'
   },
   imageUrl: {
     type: String,
@@ -58,7 +58,10 @@ const props = defineProps({
           Sharif University of Technology
         </p>
         <p class="sub-title text-gray-600 text-xl md:text-2xl lg:text-2xl">
-          IML-L01 - Spring 2024
+          IML-25737-2 - Spring 2024
+        </p>
+        <p class="professor-name text-gray-800 text-lg md:text-2xl lg:text-2xl font-semibold mt-2">
+          Professor: Sajjad Amini
         </p>
       </div>
     </section>
@@ -69,9 +72,18 @@ const props = defineProps({
 .main-body {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   align-items: center;
   padding: 140px 6% 6% 6%;
+  background-color: var(--background);
+  min-height: 100vh;
+  margin-top: -1px;
+  background-image: 
+    linear-gradient(135deg, 
+      rgba(45, 70, 185, 0.03) 0%, 
+      rgba(78, 205, 196, 0.03) 100%);
 }
 
 .page-title {
@@ -80,23 +92,22 @@ const props = defineProps({
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
-}
-
-.underline-label {
-  width: 100%;
-  left: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .first-title {
   font-size: 3rem;
   line-height: 1;
-  color: #181E4B;
+  color: var(--primary-color);
   font-weight: 700;
+  position: relative;
 }
 
 .first-title-inner {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .underline-label {
@@ -106,12 +117,13 @@ const props = defineProps({
   position: absolute;
   display: block;
   vertical-align: middle;
+  z-index: -1;
 }
 
 .second-title {
   margin-top: 20px;
   text-align: center;
-  color: rgb(75 85 99);
+  color: var(--text-color);
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -120,9 +132,15 @@ const props = defineProps({
 .sub-title {
   margin-bottom: 20px;
   margin-top: 5px;
-  color: rgb(75 85 99);
+  color: var(--text-color);
+  opacity: 0.9;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.relative {
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -149,5 +167,13 @@ const props = defineProps({
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+}
+
+.professor-name {
+  margin-top: 10px; /* Reduced space above */
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Make it bold */
+  color: var(--primary-color); /* Change color to primary */
+  text-align: center; /* Center align the text */
 }
 </style>

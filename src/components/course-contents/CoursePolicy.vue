@@ -1,44 +1,60 @@
 <script setup lang="ts">
-const sampleDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.';
+const sectionTitle = 'Course Policies';
+
+const policies = [
+  {
+    title: 'Attendance',
+    content: 'Regular attendance is expected. While attendance is not directly graded, active participation can earn you extra credit.'
+  },
+  {
+    title: 'Late Submissions',
+    content: 'Late submissions will be penalized 10% per day up to 3 days. After 3 days, submissions will not be accepted without prior arrangement.'
+  },
+  {
+    title: 'Academic Integrity',
+    content: 'All submitted work must be your own. Plagiarism and cheating will result in a failing grade for the assignment and possible disciplinary action.'
+  },
+  {
+    title: 'Communication',
+    content: 'Course announcements will be made through the Telegram channel. Important updates will also be posted on the course website.'
+  }
+];
 </script>
 
 <template>
-  <div class="sub-section">
-    <div class="sub-section-content">
-      <div class="title-pack">
-<!--        <img src="/icons/warning.png" alt="warning" class="warning-image" />-->
-        <div class="title font-bold text-2xl sm:text-2xl md:text-3xl">Course Policy</div>
-<!--        <img src="/icons/warning.png" alt="warning" class="warning-image" />-->
-      </div>
-      <div class="content text-black-600 text-md md:text-xl lg:text-xl">
-        {{ sampleDescription }}
+  <div class="section">
+    <div class="section-content">
+      <div class="title font-bold text-3xl sm:text-4xl">{{ sectionTitle }}</div>
+      <div class="sub-section">
+        <div class="sub-section-content">
+          <div v-for="(policy, index) in policies" :key="index" class="policy-item">
+            <h3 class="sub-title font-bold text-2xl sm:text-2xl">{{ policy.title }}</h3>
+            <p class="policy-content">{{ policy.content }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.sub-section-content .title-pack {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 20px;
-  align-items: center;
-  justify-content: center;
+.policy-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.sub-section-content .title-pack .title {
-  color: var(--secondary-color-darker);
-  margin: 0 20px;
+.policy-item:last-child {
+  border-bottom: none;
 }
 
-.sub-section-content .content {
-  text-align: justify;
-  margin-bottom: 10px;
+.policy-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
-.sub-section-content .warning-image {
-  height: 35px;
-  width: 35px;
+.policy-content {
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 </style>

@@ -1,9 +1,12 @@
 <template>
   <footer class="footer-body">
-    <div class="copyright">
-      <p class="copyright-text" >
-        Copyright © 2024 | Department of Electrical Engineering | Sharif University of Technology
-      </p>
+    <hr class="footer-divider" />
+    <div class="footer-content">
+      <div class="copyright">
+        <p class="copyright-text">
+          Copyright © 2024 | Department of Electrical Engineering | Sharif University of Technology
+        </p>
+      </div>
     </div>
   </footer>
 </template>
@@ -28,7 +31,7 @@
 .copyright .copyright-text {
   margin: 10px;
   text-align: center;
-  color: rgb(94 98 130);
+  color: var(--text-color);
 }
 
 @media (min-width: 640px) {

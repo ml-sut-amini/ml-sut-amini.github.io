@@ -16,13 +16,15 @@ const sampleTitle = 'Contact Us';
             <ul>
               <li style="margin-top: 15px; margin-bottom: 8px;"><span class="font-bold">Email:</span></li>
               <ul class="sec-list">
-                <li class="font-bold">Ali Nourian: &nbsp;&nbsp;<a class="any-link font-bold" href="mailto:alinourian10@gmail.com">alinourian10@gmail.com</a></li>
-                <li class="font-bold">Zahra Sodagar: &nbsp;&nbsp;<a class="any-link font-bold" href="mailto:zarsodagar@gmail.com">zarsodagar@gmail.com</a></li>
+                <li class="font-bold">Borna Khodabandeh: &nbsp;&nbsp;<a class="any-link font-bold" href="mailto:borna710kh@gmail.com">borna710kh@gmail.com</a></li>
+                <li class="font-bold">Amir Abbas Afzali: &nbsp;&nbsp;<a class="any-link font-bold" href="mailto:amir8afzali@gmail.com">amir8afzali@gmail.com</a></li>
               </ul>
               <li style="margin-top: 20px; margin-bottom: 8px;"><span class="font-bold">Telegram:</span></li>
               <ul class="sec-list">
-                <li>Join our <a class="any-link font-bold" href="https://t.me/DeepGenerativeModels" target="_blank">Telegram Channel</a> for important announcements.</li>
-                <li>Participate in discussions in our <a class="any-link font-bold" href="https://t.me/+0x63g0nA1Y5mMGZk" target="_blank">Telegram Group</a>.</li>
+                <li>Borna Khodabandeh: <a class="any-link font-bold" href="https://t.me/BornaKhodabandeh" target="_blank">@BornaKhodabandeh</a></li>
+                <li>Amir Abbas Afzali: <a class="any-link font-bold" href="https://t.me/AMIRAA88" target="_blank">@AMIRAA88</a></li>
+                <li style="margin-top: 10px;">Join our <a class="any-link font-bold" href="https://t.me/IML_1403_SAmini" target="_blank">Telegram Channel</a> for important announcements.</li>
+                <li>Participate in discussions in our <a class="any-link font-bold" href="https://t.me/+Q58p9i-nqo8wNmU8" target="_blank">Telegram Group</a>.</li>
               </ul>
             </ul>
           </div>
@@ -53,7 +55,6 @@ const sampleTitle = 'Contact Us';
 </template>
 
 <style scoped>
-
 .font-bold {
   font-weight: 700;
 }
@@ -78,14 +79,5 @@ const sampleTitle = 'Contact Us';
 
 .sec-list > li {
   padding-left: 15px;
-}
-
-.any-link {
-  text-decoration: none;
-  color: #1e88e5;
-}
-
-.any-link:hover {
-  text-decoration: underline;
 }
 </style>

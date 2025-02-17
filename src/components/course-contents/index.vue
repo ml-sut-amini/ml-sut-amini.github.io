@@ -7,7 +7,6 @@ import ClassDetails from "../course-contents/ClassDetails.vue";
   <div class="section">
     <div class="section-content p-8 sm:p-12 md:p-16 xl:p-20">
       <div class="title font-bold text-3xl sm:text-4xl">Course Details</div>
-<!--      <CoursePolicy />-->
       <CourseDetails />
       <ClassDetails />
     </div>

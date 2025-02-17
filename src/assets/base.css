@@ -1,15 +1,41 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --primary-color: #181E4B;
-  --secondary-color: #DF6951;
-  --text-color: #5E6282;
-  --dark-color: #14183E;
-  --light-color: #F5F5F5;
-  --border-color: #E5E7EB;
+  /* Light mode colors */
+  --primary-color-light: #2D46B9;      /* Deeper blue */
+  --secondary-color-light: #FF6B6B;    /* Coral red */
+  --accent-color-light: #4ECDC4;       /* Turquoise */
+  --accent-color-2-light: #FFD93D;     /* Golden yellow */
+  --text-color-light: #424874;         /* Navy text */
+  --dark-color-light: #292E47;         /* Dark blue-gray */
+  --light-color-light: #F8F9FE;        /* Light blue-white */
+  --border-color-light: #E5E7EB;
+  --background-light: #ffffff;
+  
+  /* Dark mode colors */
+  --primary-color-dark: #7B93FF;       /* Lighter blue */
+  --secondary-color-dark: #FF8F8F;     /* Lighter coral */
+  --accent-color-dark: #6FF4EB;        /* Brighter turquoise */
+  --accent-color-2-dark: #FFE584;      /* Lighter golden */
+  --text-color-dark: #E1E5FF;          /* Light text */
+  --dark-color-dark: #1A1B26;          /* Dark background */
+  --light-color-dark: #282A36;         /* Slightly lighter dark */
+  --border-color-dark: #363945;
+  --background-dark: #1A1B26;
+
+  /* Default to light theme */
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+  --accent-color: var(--accent-color-light);
+  --accent-color-2: var(--accent-color-2-light);
+  --text-color: var(--text-color-light);
+  --dark-color: var(--dark-color-light);
+  --light-color: var(--light-color-light);
+  --border-color: var(--border-color-light);
+  --background: var(--background-light);
 
   --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #E5E7EB;
+  --vt-c-white-soft: #f8f9fe;
+  --vt-c-white-mute: #f1f3f9;
 
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
@@ -34,15 +60,24 @@
   --color-background-mute: var(--vt-c-white-mute);
 
   --color-border: var(--border-color);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border-hover: var(--accent-color);
 
-  --color-heading-1: var(--dark-color);
+  --color-heading-1: var(--primary-color);
   --color-heading-2: var(--secondary-color);
-  --color-heading-3: var(--secondary-color-darker);
-  --color-text: var(--vt-c-text-dark-3);
+  --color-heading-3: var(--accent-color);
+  --color-text: var(--text-color);
+
+  --transition-speed: 0.3s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius: 0.5rem;
+  --box-shadow: 0 4px 6px rgba(45, 70, 185, 0.1);
 
   --section-gap: 160px;
-}
+
+  /* Add gradient variables */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  --gradient-secondary: linear-gradient(135deg, var(--secondary-color), var(--accent-color-2));
+} 
 
 *,
 *::before,
@@ -62,10 +97,14 @@ html, body, #__layout, .main {
 
 body {
   min-height: 100vh;
-  color: var(--primary-color);
-  background: var(--light-color);
-  transition: color 0.5s,
-  background-color 0.5s;
+  color: var(--text-color);
+  background-color: var(--dark-color-dark);
+  background-image: 
+    linear-gradient(135deg, 
+      rgba(123, 147, 255, 0.05) 0%, 
+      rgba(111, 244, 235, 0.05) 100%);
+  position: relative;
+  transition: all var(--transition-speed) var(--transition-timing);
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -75,14 +114,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* New overlay using a pseudo-element for a subtle radial dot pattern */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Create small dots (1px) on a 40px grid with a light white tone */
+  background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .section {
-  padding: 2rem 0;
+  margin: 2rem 0;
+  padding: 1rem;
 }
 
 .section-content {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  background: var(--vt-c-white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 10px 30px rgba(45, 70, 185, 0.15);
+  transform: translateY(0);
+  transition: all 0.3s var(--transition-timing);
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(45, 70, 185, 0.2);
+  border-color: var(--accent-color);
+}
+
+.section-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s var(--transition-timing);
+}
+
+.section-content:hover::before {
+  opacity: 1;
 }
 
 .section-content .title {
@@ -91,6 +175,8 @@ body {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.25rem;
+  text-align: center;
+  transition: color var(--transition-speed) var(--transition-timing);
 }
 
 .section-content .content {
@@ -104,23 +190,37 @@ body {
   width: 90%;
   max-width: 450px;
   align-self: center;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .sub-section {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .sub-section-content {
+  background: var(--vt-c-white-soft);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
   margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(45, 70, 185, 0.1);
+  transition: all 0.3s var(--transition-timing);
+  border: 1px solid var(--border-color);
+}
+
+.sub-section-content:hover {
+  box-shadow: 0 8px 25px rgba(45, 70, 185, 0.15);
+  border-color: var(--accent-color);
 }
 
 .sub-section-content .sub-title {
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
+  text-align: center;
+  transition: color var(--transition-speed) var(--transition-timing);
 }
 
 .sub-section-content .sub-content {
@@ -144,6 +244,8 @@ body {
   padding-left: 20px;
   position: relative;
   text-align: left;
+  transition: all var(--transition-speed) var(--transition-timing);
+  animation: slideIn 0.3s ease-in-out;
 }
 
 .sub-section-content .sub-content > ul > li::marker {
@@ -154,10 +256,15 @@ body {
   content: "\2022";
   font-size: 20px;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.sub-section-content .sub-content > ul > li:hover {
+  transform: translateX(5px);
+  color: var(--accent-color);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -166,7 +273,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 640px) {
   .section-content {
-    padding: 40px 3rem 20px 3rem;
+    padding: 40px 3rem 20px;
   }
 
   .section-content .title {
@@ -185,7 +292,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .section-content {
-    padding: 40px 4rem 20px 4rem;
+    padding: 40px 4rem 20px;
   }
 
   .section-content .content {
@@ -200,6 +307,126 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1280px) {
   .section-content {
-    padding: 40px 5rem 20px 5rem;
+    padding: 40px 5rem 20px;
   }
+}
+
+/* Add hover effects to interactive elements */
+.navbar-item:hover {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.any-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  position: relative;
+  transition: all var(--transition-speed) var(--transition-timing);
+}
+
+.any-link:after {
+  background-color: var(--primary-color);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.any-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+    --accent-color: var(--accent-color-dark);
+    --accent-color-2: var(--accent-color-2-dark);
+    --text-color: var(--text-color-dark);
+    --dark-color: var(--dark-color-dark);
+    --light-color: var(--light-color-dark);
+    --border-color: var(--border-color-dark);
+    --background: var(--background-dark);
+
+    /* Override section content backgrounds for dark mode */
+    --section-bg: var(--dark-color-dark);
+    --subsection-bg: var(--light-color-dark);
+    --vt-c-white: var(--dark-color-dark);
+    --vt-c-white-soft: var(--light-color-dark);
+    --vt-c-white-mute: rgba(255, 255, 255, 0.05);
+  }
+
+  .section-content {
+    background: var(--section-bg);
+    border-color: var(--border-color-dark);
+  }
+
+  .sub-section-content {
+    background: var(--subsection-bg);
+    border-color: var(--border-color-dark);
+  }
+
+  .section-content:hover,
+  .sub-section-content:hover {
+    border-color: var(--accent-color-dark);
+  }
+
+  .schedule-row:hover {
+    background-color: var(--light-color-dark);
+  }
+
+  .exam-row {
+    background-color: rgba(251, 191, 36, 0.15);
+  }
+
+  body {
+    background-color: var(--dark-color-dark);
+    background-image: 
+      linear-gradient(135deg, 
+        rgba(123, 147, 255, 0.05) 0%, 
+        rgba(111, 244, 235, 0.05) 100%);
+  }
+
+  body::before {
+    background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  }
+}
+
+/* Update header styles */
+.navbar-header {
+  background-color: var(--light-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Table styles */
+.table-class {
+  background-color: var(--light-color);
+}
+
+.table-head-row {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Update dialog panel styles */
+.dialog-panel {
+  background-color: var(--light-color);
+}
+
+/* Update the app background */
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: transparent;
 }

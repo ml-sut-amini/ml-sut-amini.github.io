@@ -22,23 +22,30 @@ const courseHeadAssistants = {
 const courseAssistants = {
   title: 'Course Assistants',
   people: [
-    {firstName: 'Arshak', lastName: 'Rezvani', avatar: 'Rezvani.jpg', personalWebsite: 'https://ir.linkedin.com/in/arshak-rezvani-3b3423218'},
-    {firstName: 'Illia', lastName: 'Hashemi Rad', avatar: 'HashemiRad.jpg', personalWebsite: 'https://linkedin.com/in/ilia-hashemi-rad'},
-    {firstName: 'Ramtin', lastName: 'Moslemi', avatar: 'Moslemi.jpg', personalWebsite: 'https://ramtinmoslemi.github.io'},
-    {firstName: 'Ali', lastName: 'Nikkhah', avatar: 'Nikkhah.jpg', personalWebsite: 'https://ir.linkedin.com/in/alinikkhah2001'},
-    {firstName: 'Hesam', lastName: 'Hosseini', avatar: 'Hosseini.jpg', personalWebsite: ''},
-    {firstName: 'Homan', lastName: 'Zolfaghari', avatar: 'Zolfaghari.jpg', personalWebsite: 'https://hoomanzolfaghari84.github.io/'},
-    {firstName: 'Amir', lastName: 'Mirrashid', avatar: 'Mirrashid.jpg', personalWebsite: ''},
-    {firstName: 'Arash', lastName: 'Hajian', avatar: 'Hajian.jpg', personalWebsite: ''},
-    {firstName: 'Amir', lastName: 'Afzali', avatar: 'Afzali.jpg', personalWebsite: ''},
-    {firstName: 'Ali', lastName: 'Ackbari', avatar: 'Ackbari.jpg', personalWebsite: ''},
-    // {firstName: '', lastName: '', avatar: 'profile.jpg', personalWebsite: ''},
-    // {firstName: '', lastName: '', avatar: 'profile.jpg', personalWebsite: ''},
-    // {firstName: '', lastName: '', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Parsa', lastName: 'Ghezelbash', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Amirhossein', lastName: 'Naghdi', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Iman', lastName: 'Ahmadi', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Ali', lastName: 'Sadeghian', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Hesam', lastName: 'Hosseini', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Amirreza', lastName: 'Velaei', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Mohammad', lastName: 'Mosavi', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Mohammad Hossein', lastName: 'Momeni', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Zahra', lastName: 'Maleki', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Hooman', lastName: 'Zolfaghari', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Romina', lastName: 'Babaei', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Yahya', lastName: 'Tehrani', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Mahdi', lastName: 'Tabatabaei', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Sina', lastName: 'Yazdgerd', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Ghazal', lastName: 'Hosseini', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Amirreza', lastName: 'Zameni', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Amirreza', lastName: 'Tanevardi', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Mohammad', lastName: 'Mohammadian', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Mohammad Parsa', lastName: 'Ghaderahmadi', avatar: 'profile.jpg', personalWebsite: ''},
+    {firstName: 'Sina', lastName: 'Fathi', avatar: 'profile.jpg', personalWebsite: ''},
   ]
 };
-</script>
 
+</script>
 <template>
   <div class="section">
     <div class="section-content">
@@ -59,7 +66,7 @@ const courseAssistants = {
         </div>
         <div class="sub-section-content">
           <div class="sub-title">{{ courseHeadAssistants.title }}</div>
-          <div class="grid-team">
+          <div class="grid-team scrollable">
             <div class="grid-card" v-for="(headAssistant, index) in courseHeadAssistants.people" :key="index">
               <PersonCard
                   :firstName="headAssistant.firstName"
@@ -72,7 +79,7 @@ const courseAssistants = {
         </div>
         <div class="sub-section-content">
           <div class="sub-title">{{ courseAssistants.title }}</div>
-          <div class="grid-team">
+          <div class="grid-team scrollable">
             <div class="grid-card" v-for="(assistant, index) in courseAssistants.people" :key="index">
               <PersonCard
                   :firstName="assistant.firstName"
@@ -95,14 +102,18 @@ const courseAssistants = {
 }
 
 .grid-team {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+}
+
+.scrollable {
+  max-width: 100%;
 }
 
 @media (min-width: 640px) {
   .grid-team {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex-wrap: nowrap;
   }
 }
 
