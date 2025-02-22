@@ -417,26 +417,50 @@ export default {
               </li>
               
               <li class="material-category mt-4">Additional Resources:</li>
-              <li><a class="any-link" href="https://d2l.ai/">Dive into Deep Learning</a> - Interactive deep learning book with code</li>
-              <li><a class="any-link" href="https://www.deeplearningbook.org/">Deep Learning</a> by Goodfellow, Bengio, and Courville</li>
-              <li><a class="any-link" href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn Tutorials</a> - For practical implementation</li>
               <li class="material-item">
-                <a class="any-link" href="https://www.di.ens.fr/~fbach/ltfp_book.pdf">Learning Theory from First Principles</a> - An advanced theory book by Francis Bach.
+                <a class="any-link" href="https://d2l.ai/">Dive into Deep Learning</a> 
+                <span class="material-description">- Interactive deep learning book with code</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.deeplearningbook.org/">Deep Learning</a> 
+                <span class="material-description">by Goodfellow, Bengio, and Courville</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn Tutorials</a> 
+                <span class="material-description">- For practical implementation</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.di.ens.fr/~fbach/ltfp_book.pdf">Learning Theory from First Principles</a> 
+                <span class="material-description">- An advanced theory book by Francis Bach.</span>
               </li>
               <li class="material-category mt-4">Reinforcement Learning:</li>
               <li class="material-item">
-                <a class="any-link" href="https://www.youtube.com/watch?v=ISk80iLhdfU">Introduction to Reinforcement Learning</a> - A beginner-friendly video that covers the basics of reinforcement learning concepts.
+                <a class="any-link" href="https://www.youtube.com/watch?v=ISk80iLhdfU">Introduction to Reinforcement Learning</a> 
+                <span class="material-description">- A beginner-friendly video that covers the basics of reinforcement learning concepts.</span>
               </li>
               <li class="material-category mt-4">Math Prerequisites Review:</li>
               <li class="material-item">
-                <a class="any-link" href="https://www.math.uwaterloo.ca/~hwolkowi/matrix-cookbook.pdf">Matrix Cookbook</a> - A comprehensive resource for matrix equations and identities.
+                <a class="any-link" href="https://www.math.uwaterloo.ca/~hwolkowi/matrix-cookbook.pdf">Matrix Cookbook</a> 
+                <span class="material-description">- A comprehensive resource for matrix equations and identities.</span>
               </li>
-              <li><a class="any-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Essence of Linear Algebra</a> by 3Blue1Brown</li>
-              <li><a class="any-link" href="https://seeing-theory.brown.edu/">Seeing Theory</a> - Visual introduction to probability and statistics</li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Essence of Linear Algebra</a> 
+                <span class="material-description">by 3Blue1Brown</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://seeing-theory.brown.edu/">Seeing Theory</a> 
+                <span class="material-description">- Visual introduction to probability and statistics</span>
+              </li>
               
               <li class="material-category mt-4">Implementation Resources:</li>
-              <li><a class="any-link" href="https://pytorch.org/tutorials/">PyTorch Tutorials</a> - Official tutorials and examples</li>
-              <li><a class="any-link" href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a> - Official guides and tutorials</li>
+              <li class="material-item">
+                <a class="any-link" href="https://pytorch.org/tutorials/">PyTorch Tutorials</a> 
+                <span class="material-description">- Official tutorials and examples</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a> 
+                <span class="material-description">- Official guides and tutorials</span>
+              </li>
             </ul>
           </div>
         </div>
