@@ -17,7 +17,7 @@ const presentations = ref([
   {
     title: "L02. Univariate & Multivariate Probability",
     description: "Probability Concepts, Distributions, Joint Probabilities",
-    link: "/files/slides/IML_14032_L02_Univariate_Multivariate_Probability.pdf",
+    link: "/files/slides/IML_14012_S02_Univariate_Probability_with_Transition.pdf",
     available: false
   },
   {

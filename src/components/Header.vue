@@ -107,6 +107,8 @@ const scrollToSection = (sectionId) => {
   padding-bottom: 0;
   height: 64px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 2px 8px;
+  left: 0;
+  top: 0;
 }
 
 .inner-navbar {
@@ -171,7 +173,7 @@ const scrollToSection = (sectionId) => {
   bottom: 0;
   overflow-y: auto;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255);
+  background-color: rgb(34, 34, 34);
   padding: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
 }
@@ -209,7 +211,7 @@ const scrollToSection = (sectionId) => {
 }
 
 .flow-root-inner-2 > .flow-item {
-  color: var(--text-color);
+  color: white;
   line-height: 1.6;
   font-weight: 600;
   font-size: 1rem;
@@ -221,28 +223,12 @@ const scrollToSection = (sectionId) => {
 }
 
 .flow-root-inner-2 > .flow-item:hover {
-  color: var(--primary-color);
+  color: rgb(200, 200, 200);
 }
 
 .flow-root-inner-2 {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-}
-
-.flow-root-inner-2 > .flow-item {
-  color: rgb(17, 24, 39);
-  line-height: 1.6;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.75rem 0;
-  border-radius: 0.5rem;
-  display: block;
-  text-decoration: inherit;
-  cursor: pointer;
-}
-
-.flow-root-inner-2 > .flow-item:hover {
-  color: var(--primary-color);
 }
 
 @media (min-width: 900px) {

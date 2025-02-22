@@ -90,6 +90,14 @@
       </div>
     </div>
   </div>
+  <div class="sub-section">
+    <div class="sub-section-content">
+      <div class="sub-title">Workshops</div>
+      <div class="sub-content">
+        <p>Details will be announced during the semester.</p>
+      </div>
+    </div>
+  </div>
 <!--  <div class="sub-section">-->
 <!--    <div class="sub-section-content">-->
 <!--      <div class="title font-bold text-2xl sm:text-2xl">Course Pages</div>-->

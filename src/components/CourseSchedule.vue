@@ -322,6 +322,16 @@ export default {
           ],
           coursework: '',
           deadline: ''
+        },
+        {
+          event: 'exam',
+          number: 32,
+          date: '1404/03/31',
+          topics: [
+            {topic: 'Final Exam', link: ''},
+          ],
+          coursework: '',
+          deadline: ''
         }
       ]
     }
@@ -351,6 +361,7 @@ export default {
       <div class="title font-bold text-3xl sm:text-4xl">{{ sectionTitle }}</div>
       <div class="sub-section">
         <div class="sub-section-content">
+          <div class="schedule-wrapper">
           <div class="schedule-grid">
             <div class="schedule-header">
               <div class="header-cell">#</div>
@@ -374,6 +385,7 @@ export default {
             </div>
           </div>
         </div>
+        </div>
       </div>
       <div class="sub-section">
         <div class="sub-section-content">
@@ -392,8 +404,12 @@ export default {
               
               <li class="material-category mt-4">Online Courses & Lectures:</li>
               <li class="material-item">
-                <a class="any-link" href="https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN">Machine Learning by Andrew Ng</a>
+                <a class="any-link" href="https://www.coursera.org/specializations/machine-learning-introduction">Machine Learning by Andrew Ng</a>
                 <span class="material-description">- Stanford University/Coursera</span>
+              </li>
+              <li class="material-item">
+                <a class="any-link" href="https://cs229.stanford.edu/main_notes.pdf">Stanford CS229 Course Notes</a>
+                <span class="material-description">- Stanford University</span>
               </li>
               <li class="material-item">
                 <a class="any-link" href="https://www.cs.cornell.edu/courses/cs4780/2018fa/">Machine Learning for Intelligent Systems</a>
@@ -404,8 +420,17 @@ export default {
               <li><a class="any-link" href="https://d2l.ai/">Dive into Deep Learning</a> - Interactive deep learning book with code</li>
               <li><a class="any-link" href="https://www.deeplearningbook.org/">Deep Learning</a> by Goodfellow, Bengio, and Courville</li>
               <li><a class="any-link" href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn Tutorials</a> - For practical implementation</li>
-              
+              <li class="material-item">
+                <a class="any-link" href="https://www.di.ens.fr/~fbach/ltfp_book.pdf">Learning Theory from First Principles</a> - An advanced theory book by Francis Bach.
+              </li>
+              <li class="material-category mt-4">Reinforcement Learning:</li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.youtube.com/watch?v=ISk80iLhdfU">Introduction to Reinforcement Learning</a> - A beginner-friendly video that covers the basics of reinforcement learning concepts.
+              </li>
               <li class="material-category mt-4">Math Prerequisites Review:</li>
+              <li class="material-item">
+                <a class="any-link" href="https://www.math.uwaterloo.ca/~hwolkowi/matrix-cookbook.pdf">Matrix Cookbook</a> - A comprehensive resource for matrix equations and identities.
+              </li>
               <li><a class="any-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Essence of Linear Algebra</a> by 3Blue1Brown</li>
               <li><a class="any-link" href="https://seeing-theory.brown.edu/">Seeing Theory</a> - Visual introduction to probability and statistics</li>
               
@@ -421,7 +446,14 @@ export default {
 </template>
 
 <style scoped>
+.schedule-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  max-width: 100%;
+}
+
 .schedule-grid {
+  min-width: 800px; /* Ensures the grid doesn't shrink too much */
   width: 100%;
   border-radius: var(--border-radius);
   overflow: hidden;
